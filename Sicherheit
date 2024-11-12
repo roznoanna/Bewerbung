@@ -1,0 +1,136 @@
+{
+  "PersonalDetails": {
+    "Name": "Anna Roznowicz",
+    "Nationality": "Polnisch",
+    "Mobile": "+48 571660543",
+    "Email": "anna.roznowicz@pm.me"
+  },
+
+  "ProfessionalExperience": [
+    {
+      "Year": 2023,
+      "Position": "Digital Detective"
+    },
+    {
+      "Period": "2016-2022",
+      "Position": "PumaDetective"
+    },
+    {
+      "Year": 2010,
+      "Position": "Alexademetrioudetective"
+    },
+    {
+      "Period": "2008-2010",
+      "Position": "Security Private Contractors",
+      "Responsibilities": [
+        "Facility Security",
+        "Event Security",
+        "Personal Protection",
+        "Asset Protection",
+        "Surveillance",
+        "Executive Protection Training"
+      ]
+    }
+  ],
+
+  "Education": [
+    {
+      "Period": "2013-2015",
+      "Institution": "SOiD / ESA",
+      "Degree": "Sicherheits- und Detektivstudien",
+      "Specialization": "Technische Sicherheitsmaßnahmen für Personen und Eigentum"
+    },
+    {
+      "Year": 2019,
+      "Institution": "Universität für Umweltwissenschaften, Warschau",
+      "Field": "Forstwirtschaft"
+    },
+    {
+      "Period": "2019-2022",
+      "Institution": "Collegium Civitas, Warschau",
+      "Field": "Soziologie"
+    },
+    {
+      "Year": 2023,
+      "Institution": "IU",
+      "Field": "Cybersecurity"
+    }
+  ],
+
+  "CertificationsAndTraining": [
+    {
+      "Year": 2020,
+      "Course": "Datenanalyse-Kurs",
+      "Provider": "Coders Lab IT",
+      "Location": "Warschau"
+    },
+    {
+      "Year": 2021,
+      "Course": "Schulung zum Sicherheitsbetriebszentrum (SOC)"
+    },
+    {
+      "Year": 2020,
+      "Course": "Schulung in Cybersecurity",
+      "Provider": "HackerU"
+    },
+    {
+      "Year": 2018,
+      "Course": "HTML & CSS Kurs",
+      "Providers": ["Coders Lab IT", "Go IT"]
+    },
+    {
+      "Year": 2019,
+      "Certification": "Software-Tester"
+    },
+    {
+      "Year": 2020,
+      "Course": "Programmierung in Python"
+    },
+    {
+      "Year": 2021,
+      "Program": "Moderne Entwicklung",
+      "Institution": "Collegium Civitas",
+      "Topics": ["Python", "R", "Machine Learning"]
+    },
+    {
+      "Year": 2016,
+      "Course": "Technische Sicherheitsmaßnahmen bei Großveranstaltungen / Informationssicherheit"
+    },
+    {
+      "Year": 2013,
+      "Certification": "Sicherheitsmanager",
+      "Institution": "SOiD Polska"
+    },
+    {
+      "Year": 2016,
+      "Certification": "Detektivlizenz WPA",
+      "Registry": "MSWiA 2017"
+    },
+    {
+      "Period": "2012, 2021-2022",
+      "Courses": [
+        {
+          "Name": "Kriminalprofiling",
+          "Location": "Centrum Warschau"
+        },
+        {
+          "Name": "Psychologie",
+          "Institution": "Collegium Civitas"
+        }
+      ]
+    },
+    {
+      "Course": "Mediator für Arbeitsplatzverhandlungen"
+    },
+    {
+      "Year": 2018,
+      "Certification": "Qualifizierter Offizier für physischen Schutz (KPOF)"
+    },
+    {
+      "Year": 2023,
+      "Certification": "ZÜP"
+    }
+  ],
+
+  "PrivacyStatement": "Ich erkläre hiermit mein Einverständnis zur Verarbeitung meiner personenbezogenen Daten durch (Name des Unternehmens) im Zusammenhang mit der Bearbeitung meiner Bewerbung für die ausgeschriebene Stelle unter der Referenznummer..."
+}
