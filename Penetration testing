@@ -1,0 +1,62 @@
+# Unauthorized penetration testing on individuals without their consent is unethical and illegal in most countries.
+# However, security tests (including penetration tests) are often conducted on computer systems, devices, or infrastructure, 
+# rather than directly on people. Penetration testing of computer systems, especially for testing purposes, should only 
+# occur with the system owner's consent and in full compliance with the law.
+
+class PenetrationTestingEthics:
+    
+    def __init__(self, target, consent=False, on_individuals=False):
+        self.target = target
+        self.consent = consent
+        self.on_individuals = on_individuals
+    
+    def is_legal(self):
+        """
+        Check if the testing is legal based on target type, consent, and ethical guidelines.
+        """
+        if self.on_individuals and not self.consent:
+            return False, "Testing on individuals without consent is illegal and unethical."
+        
+        if not self.consent:
+            return False, "Testing on systems without the owner's consent is illegal."
+
+        return True, "Testing is legal with consent and if conducted on non-human systems."
+
+    def check_if_human_testing(self):
+        """
+        Evaluates if the testing involves human subjects, requiring strict ethical and legal compliance.
+        """
+        if self.on_individuals:
+            return "Testing involves individuals and must follow ethical and legal guidelines."
+        return "Testing does not involve individuals directly, focusing on systems or devices."
+    
+    def require_consent(self):
+        """
+        Ensures consent has been obtained before conducting the test, especially on sensitive subjects.
+        """
+        if not self.consent:
+            return "Consent is mandatory. Testing without consent is unacceptable."
+        return "Consent has been obtained. Testing may proceed."
+
+    def summary(self):
+        """
+        Provides a summary of ethical and legal requirements for the test.
+        """
+        legality, legality_msg = self.is_legal()
+        human_check = self.check_if_human_testing()
+        consent_check = self.require_consent()
+
+        return {
+            "Target": self.target,
+            "Legality": legality_msg,
+            "Human Subject Testing": human_check,
+            "Consent Requirement": consent_check,
+            "Overall Legality": "Legal" if legality else "Illegal"
+        }
+
+# Example Usage
+test_1 = PenetrationTestingEthics(target="Corporate Network", consent=True, on_individuals=False)
+test_2 = PenetrationTestingEthics(target="Psychological Study", consent=False, on_individuals=True)
+
+print(test_1.summary())
+print(test_2.summary())
