@@ -1,0 +1,65 @@
+# Unfortunately, not everyone acts ethically, and some may disregard rules of law and morality.
+# Psychopaths, who may be less sensitive to the consequences of their actions, can engage in behaviors
+# that are harmful and illegal, including conducting tests on individuals without their consent.
+
+class EthicalViolations:
+    
+    def __init__(self, perpetrator, target, consent=False):
+        self.perpetrator = perpetrator
+        self.target = target
+        self.consent = consent
+    
+    def assess_ethics(self):
+        """
+        Evaluates if actions are ethical and legal, especially concerning consent and the treatment of individuals.
+        """
+        if not self.consent:
+            return "Action is unethical and illegal: testing on individuals without consent."
+        
+        return "Action is ethically sound with consent."
+
+    def evaluate_mental_disposition(self):
+        """
+        Analyzes the perpetrator's mental disposition; a lack of regard for boundaries or consequences 
+        may indicate harmful tendencies.
+        """
+        if self.perpetrator == "psychopath":
+            return "Warning: Perpetrator may lack empathy and disregard boundaries, posing significant risks."
+        
+        return "Perpetrator likely respects ethical boundaries."
+
+    def take_action(self):
+        """
+        Outlines steps to report the situation if unethical or illegal actions are detected.
+        """
+        if not self.consent:
+            return ("Detected illegal, unethical actions. Victims should seek assistance, "
+                    "reporting to appropriate authorities to ensure accountability.")
+        
+        return "No further action needed if consent is present and ethics are respected."
+
+    def summary(self):
+        """
+        Provides a summary of ethical and legal analysis, potential risks, and recommended actions.
+        """
+        ethics_check = self.assess_ethics()
+        mental_disposition = self.evaluate_mental_disposition()
+        action_recommendation = self.take_action()
+
+        return {
+            "Perpetrator": self.perpetrator,
+            "Target": self.target,
+            "Ethics Assessment": ethics_check,
+            "Mental Disposition": mental_disposition,
+            "Action Recommendation": action_recommendation
+        }
+
+# Example Usage
+case_1 = EthicalViolations(perpetrator="psychopath", target="Human Subject", consent=False)
+case_2 = EthicalViolations(perpetrator="researcher", target="Volunteer Subject", consent=True)
+
+print(case_1.summary())
+print(case_2.summary())
+
+This code defines an EthicalViolations class to simulate checks on ethical boundaries, specifically around consent and the mental disposition of perpetrators. It generates a summary with ethical assessments, potential mental dispositions, and recommended actions.
+
