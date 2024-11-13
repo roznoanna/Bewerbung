@@ -1,0 +1,110 @@
+# Penetration testing in cybersecurity involves controlled simulations of attacks on IT systems, applications, 
+# or networks to identify security vulnerabilities. These tests are performed by specialists (penetration testers) 
+# on behalf of companies or institutions aiming to strengthen their defensive systems against potential threats.
+
+class PenetrationTesting:
+    
+    def __init__(self, target_system):
+        self.target_system = target_system
+    
+    # Purpose and Scope of Penetration Testing
+    def security_assessment(self):
+        """
+        Identifies weaknesses in the system before real attackers can exploit them.
+        """
+        return f"Assessing security for {self.target_system} to identify vulnerabilities."
+
+    def attack_impact_understanding(self):
+        """
+        Allows understanding of how different vulnerabilities could be exploited and their potential damage.
+        """
+        return "Simulating attacks to understand potential impact and damages from possible exploits."
+
+    def security_enhancement(self):
+        """
+        Provides actionable insights to implement specific improvements in security.
+        """
+        return "Providing detailed reports with recommendations to enhance security."
+
+    # Types of Penetration Testing
+    def black_box_testing(self):
+        """
+        Black-box (no knowledge) – Tester has no information about the system, simulating a real-world attack.
+        """
+        return "Executing black-box testing without any prior system knowledge."
+
+    def white_box_testing(self):
+        """
+        White-box (full knowledge) – Tester has complete knowledge, e.g., source code, architecture, 
+        allowing for detailed security examination.
+        """
+        return "Executing white-box testing with full knowledge of the system."
+
+    def gray_box_testing(self):
+        """
+        Gray-box (partial knowledge) – Tester has limited information, reflecting an attack scenario 
+        where the attacker knows some internal mechanisms of the system.
+        """
+        return "Executing gray-box testing with partial knowledge of the system."
+
+    # Stages of Penetration Testing
+    def reconnaissance(self):
+        """
+        Gathering information about the system, its resources, and structure.
+        """
+        return "Stage 1: Gathering information on the system, resources, and structure."
+
+    def scanning(self):
+        """
+        Identifying open ports, services, and potential vulnerabilities.
+        """
+        return "Stage 2: Identifying open ports, active services, and potential vulnerabilities."
+
+    def gaining_access(self):
+        """
+        Simulating attacks to gain access to the system.
+        """
+        return "Stage 3: Simulating attacks to gain access to the system."
+
+    def maintaining_access(self):
+        """
+        Checking if access can be maintained over a period without detection.
+        """
+        return "Stage 4: Checking for potential ways to maintain undetected access."
+
+    def reporting(self):
+        """
+        Documenting discovered vulnerabilities and providing recommendations for patching them.
+        """
+        return "Stage 5: Documenting vulnerabilities and offering patch recommendations."
+
+    # Ethical and Legal Compliance
+    def ethical_and_legal_compliance(self):
+        """
+        Ensures tests are performed only with the system owner's consent and follow all legal regulations.
+        """
+        return "Conducting testing in compliance with ethical and legal standards to protect user data."
+
+# Example Usage
+target_system = "Corporate Network"
+pentest = PenetrationTesting(target_system)
+
+# Purpose and Scope
+print(pentest.security_assessment())
+print(pentest.attack_impact_understanding())
+print(pentest.security_enhancement())
+
+# Types of Testing
+print(pentest.black_box_testing())
+print(pentest.white_box_testing())
+print(pentest.gray_box_testing())
+
+# Testing Stages
+print(pentest.reconnaissance())
+print(pentest.scanning())
+print(pentest.gaining_access())
+print(pentest.maintaining_access())
+print(pentest.reporting())
+
+# Ethical and Legal Compliance
+print(pentest.ethical_and_legal_compliance())
